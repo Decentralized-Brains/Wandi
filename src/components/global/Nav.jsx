@@ -17,11 +17,11 @@ function Nav() {
         <div className="container flex items-center justify-between">
           <div className="mx-auto md:mx-0 relative flex text-center items-center font-twist text-3xl md:text-5xl tracking-tighter lg:w-2/6">
             <div>
-              <h1 className="animate-text duration-1000 bg-gradient-to-t from-indigo-500  via-pink-500 to-red-500 bg-clip-text font-twist text-3xl sm:text-6xl md:text-6xl text-transparent">
+              <h1 className="animate-text duration-1000 bg-gradient-to-t from-indigo-500  via-pink-500 to-red-500 bg-clip-text font-twist text-6xl sm:text-6xl md:text-6xl text-transparent">
                 WANDI
               </h1>
             </div>
-            <div className="absolute bottom-1 left-1 text-3xl md:text-6xl sm:text-6xl">
+            <div className="absolute bottom-1 left-1 text-6xl md:text-6xl max-sm:text-6xl">
               <h1 className="font-twist text-[#E4E4E4]">WANDI</h1>
             </div>
           </div>

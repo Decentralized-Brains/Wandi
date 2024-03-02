@@ -7,7 +7,7 @@ function MobileNav({showMenu}) {
         <div
         className={
           showMenu
-            ? "fixed left-0 top-0 z-40 flex h-screen w-[80%] text-black backdrop-blur-lg duration-500 ease-in lg:hidden"
+            ? "fixed left-0 top-0 z-40 flex h-screen w-[80%] text-black backdrop-blur-lg duration-300 ease-in lg:hidden"
             : "fixed left-[-100%] top-0 z-40 h-screen w-[80%] backdrop-blur-2xl duration-1000 ease-in"
         }
       >
