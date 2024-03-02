@@ -36,7 +36,7 @@ function Hero() {
             </button>
           </div>
 
-          <div className="box-section w-full backdrop-blur-2xl mt-12 p-8 rounded-lg ">
+          <div className="box-section w-full backdrop-blur-2xl my-12 p-8 rounded-lg ">
               <div className="flex justify-between font-superLagendBoy">
                 <div className="flex flex-col gap-2">
                   <h1 className="text-[#DBFF00] text-2xl">“DWØPE”</h1>
