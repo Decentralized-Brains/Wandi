@@ -1,13 +1,21 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+@layer base {
+    @font-face {
+      font-family: "SuperLegendBoy";
+      src: url(./assets/fonts/SuperLegendBoy-4w8Y.ttf);
+    }
+  }
+  
+  @font-face {
+    font-family: "twisted";
+    src: url(./assets/fonts/Twisttwist.ttf);
+  }
+
+.container {
+    @apply mx-auto max-w-[1200px] px-2;
+  }  
+
