@@ -19,3 +19,11 @@
     @apply mx-auto max-w-[1200px] px-2;
   }  
 
+
+.text-gradient-bg{
+  background: -webkit-linear-gradient(180deg, #caf00cf1,#d7ddbd);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* bg-gradient-to-r from-[#005998] to-[#683200]  */
