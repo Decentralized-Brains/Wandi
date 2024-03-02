@@ -18,11 +18,11 @@ function Nav() {
               </div>
             </div>
             <div className="right-nav">
-                <div className="nav-items items-center flex gap-6 font-superLagendBoy text-[#FFFFFF]">
-                    <h1>LEND</h1>
-                    <h1>OFFERS</h1>
-                    <h1>BORROW</h1>
-                    <h1>LOANS</h1>
+                <div className="nav-items items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
+                    <h1 className='text-lg'>LEND</h1>
+                    <h1 className='text-lg'>OFFERS</h1>
+                    <h1 className='text-lg'>BORROW</h1>
+                    <h1 className='text-lg'>LOANS</h1>
                     <button className='text-[#DBFF00] button-style border border-[#DBFF00] px-4 py-2 bor'>
                         Select Profile
                     </button>
