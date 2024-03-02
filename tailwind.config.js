@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
+    // screens:{
+    //   xl: {"max":"1600px"}
+    // },
     extend: {
       fontFamily: {
         twist: ["twisted", "sans-serif"],
