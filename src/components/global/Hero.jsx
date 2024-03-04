@@ -1,23 +1,15 @@
 import React from "react";
 import Nav from "./Nav";
-import Bg from "../../assets/background/pearl.mp4";
+
 import { MdArrowOutward } from "react-icons/md";
+import VideoBG from "./VideoBG";
 
 
 function Hero() {
   return (
     <div>
       <div className="mainpage">
-        <div className="video-docker  fixed left-0 top-0 h-full w-full overflow-hidden">
-          <video
-            className="absolute min-h-full min-w-full object-cover "
-            src={Bg}
-            type="video/webm"
-            autoPlay
-            muted
-            loop
-          ></video>
-        </div>
+        <VideoBG />
         <Nav />
         <div className="hero-text-section container relative top-32 flex flex-col gap-10">
           <div className="w-5/6">
@@ -26,7 +18,7 @@ function Hero() {
               <span className="text-gradient-bg"> LEND </span>
               AGAINST YOUR NFT’s INSTANTLY
             </h1>
-          </div>
+          </div> 
           <div className="buttons flex gap-10 max-sm:flex max-sm:flex-col max-sm:p-2 font-superLagendBoy">
             <button className="px-10 py-4 border border-white text-[#DBFF00] text-2xl">
               Borrow
