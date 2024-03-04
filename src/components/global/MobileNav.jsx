@@ -1,4 +1,5 @@
 import {React,useState} from 'react'
+import { NavLink } from 'react-router-dom'
 
 function MobileNav({showMenu}) {
     
@@ -14,10 +15,18 @@ function MobileNav({showMenu}) {
         <ul className="mt-20 mx-auto"> 
         <div className="">
             <div className="nav-items items-center flex flex-col gap-8 font-superLagendBoy text-[#FFFFFF]">
-              <h1 className='text-lg'>LEND</h1>
-              <h1 className='text-lg'>OFFERS</h1>
-              <h1 className='text-lg'>BORROW</h1>
-              <h1 className='text-lg'>LOANS</h1>
+            <NavLink to={"/lend"}>
+                <h1 className="text-lg">LEND</h1>
+              </NavLink>
+              <NavLink to={"/offers"}>
+                <h1 className="text-lg">OFFERS</h1>
+              </NavLink>
+              <NavLink to={"/borrow"}>
+                <h1 className="text-lg">BORROW</h1>
+              </NavLink>
+              <NavLink to={"/loans"}>
+                <h1 className="text-lg">LOANS</h1>
+              </NavLink>
               <button className='text-[#DBFF00] button-style border border-[#DBFF00] px-4 py-2 bor'>
                 Select Profile
               </button>
