@@ -15,7 +15,7 @@ function VideoBG() {
             loop
           ></video>
           <div>
-            <img className='absolute bottom-10 right-10' width={100} src={globe} alt="" />
+            <img className='absolute bg-fixed bottom-10 right-10' width={100} src={globe} alt="" />
           </div>
         </div>
     </div>
