@@ -4,7 +4,8 @@ import MobileNav from "./MobileNav";
 import { MdMenu } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
-import video from "../../assets/background/pearl.mp4"
+import Button from "./Button";
+
 
 function Nav() {
   const [showMenu, setShowMenu] = useState(false);
@@ -53,14 +54,9 @@ function Nav() {
               <NavLink to={"/loans"}>
                 <h1 className="text-lg">LOANS</h1>
               </NavLink>
-              <div style={{ position: 'relative', width: 'fit-content' }}>
-  <button className="relative button-style border border-[#DBFF00] px-4 py-2 bor" style={{ position: 'relative', overflow: 'hidden' }}>
-    <span className="text-[#DBFF00] z-[10] relative">Select Profile</span>
-    <video className="absolute top-0 left-0 w-full h-full object-cover" src={video} muted loop autoPlay></video>
-  </button>
-</div>
+              {/*  */}
 
-
+                <Button/>
 
 
             </div>
