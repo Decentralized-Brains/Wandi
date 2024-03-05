@@ -8,7 +8,7 @@ function Lend() {
     <div className="lend-section">
       <div className="main-page">
         <VideoBG />
-        <Nav />
+        <Nav btnText={"Select Profile"}/>
         <div className="container relative">
           <div className="text-section font-superLagendBoy text-center pt-36 pb-20">
             <h1 className="text-[2.5rem] text-gradient-bg leading-loose">
