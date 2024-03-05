@@ -10,7 +10,7 @@ function Hero() {
     <div>
       <div className="mainpage">
         <VideoBG />
-        <Nav />
+        <Nav btnText={"Select Profile"}/>
         <div className="hero-text-section container relative top-32 flex flex-col gap-10">
           <div className="w-5/6">
             <h1 className="text-[#CCCCCC] font-superLagendBoy text-[4.2rem] max-sm:text-[2.5rem] max-sm:p-2">

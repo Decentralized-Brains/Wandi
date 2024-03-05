@@ -1,7 +1,7 @@
 import React from "react";
 import video from "../../assets/background/buttonBG.mp4"
 
-function Button() {
+function Button({btnText}) {
   return (
     <div>
       <div style={{ position: "relative", width: "fit-content" }}>
@@ -9,7 +9,7 @@ function Button() {
           className="relative button-style border border-[#DBFF00] px-4 py-2 bor"
           style={{ position: "relative", overflow: "hidden" }}
         >
-          <span className="text-[#DBFF00] z-[10] relative">Select Profile</span>
+          <span className="text-[#DBFF00] z-[10] relative">{btnText}</span>
           <video
             className="absolute top-0 left-0 w-full h-full object-cover"
             src={video}

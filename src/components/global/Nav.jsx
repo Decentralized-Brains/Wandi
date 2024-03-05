@@ -7,9 +7,8 @@ import { NavLink } from "react-router-dom";
 import Button from "./Button";
 
 
-function Nav() {
+function Nav({btnText}) {
   const [showMenu, setShowMenu] = useState(false);
-
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
@@ -54,11 +53,8 @@ function Nav() {
               <NavLink to={"/loans"}>
                 <h1 className="text-lg">LOANS</h1>
               </NavLink>
-              {/*  */}
-
-                <Button/>
-
-
+              {/* Profile Video */}
+                <Button btnText={btnText}/>
             </div>
           </div>
         </div>
