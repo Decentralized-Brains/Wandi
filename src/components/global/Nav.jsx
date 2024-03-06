@@ -20,13 +20,13 @@ function Nav({btnText}) {
           <div className="mx-auto md:mx-0 relative flex text-center items-center font-twist text-3xl md:text-5xl tracking-tighter lg:w-2/6">
             <div>
               {/* <video
-              className="absolute top-0 left-0 w-full h-full object-cover"
-              src={video}
-              muted
-              loop
-              autoPlay
-            ></video> */}
-              <h1 className="duration-1000 bg-gradient-to-t from-indigo-500  via-pink-500 to-red-500 bg-clip-text font-twist text-6xl sm:text-6xl md:text-6xl text-transparent">
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                src={video}
+                muted
+                loop
+                autoPlay
+              ></video> */}
+              <h1 className="animate-text duration-1000 bg-gradient-to-t from-indigo-500  via-pink-500 to-red-500 bg-clip-text font-twist text-6xl sm:text-6xl md:text-6xl text-transparent">
                 WANDZ
               </h1>
             </div>

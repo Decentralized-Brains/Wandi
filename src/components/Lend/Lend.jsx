@@ -3,6 +3,8 @@ import VideoBG from "../global/VideoBG";
 import Nav from "../global/Nav";
 import { FiSearch, FiFilter } from "react-icons/fi";
 import Filter from "../../assets/icons/Filter.png"
+import { tableData } from "../data/data";
+
 function Lend() {
   return (
     <div className="lend-section">
@@ -42,7 +44,33 @@ function Lend() {
                 </button>
               </div>
             </div>
-            <div className="table">
+            <div className=" backdrop-blur-3xl text-left font-superLagendBoy text-[#FFFFFF] mt-12 rounded-xl border-none">
+                <table className="w-[100%]">
+                  <thead>
+                    <tr >
+                      <th className="p-6">Collection</th>
+                      <th className="p-0">Available Pool</th>
+                      <th className="p-0">Best offer</th>
+                      <th className="p-0">APY</th>
+                      <th className="p-0">Duration</th>
+                      <th></th>
+                    </tr>
+                    </thead>
+                    
+                    <tbody>
+                    {tableData.map((item,index)=>
+                    <tr className=" border-b-[1px] px-4 border-[#C3C0C0]">
+                      <td className="p-6 flex gap-2 items-center"><span><img src={item.avatar} alt="" /></span>{item.collection}</td>
+                      <td className="">{item.pool}<br /><span className="text-[9px] text-[#B5B5B5]">{item.poolOffers}</span></td>
+                      <td className="">{item.bestOffer} <br /><span className="text-[9px] text-[#B5B5B5]">{item.offerToken}</span> </td>
+                      <td>{item.apy}</td>
+                      <td>{item.duration}</td>
+                    </tr>
+                    )}
+                    </tbody>
+                    
+                  
+                </table>
                 
             </div>
           </div>
