@@ -25,7 +25,7 @@ function Lend() {
             </p>
           </div>
           <div className="table-sec">
-            <div className="sf flex justify-between items-center">
+            <div className="sf flex justify-between items-center max-sm:flex max-sm:flex-col max-sm:gap-2 max-sm:items-start">
               <div className="relative">
                 <input
                   type="text"
@@ -44,8 +44,8 @@ function Lend() {
                 </button>
               </div>
             </div>
-            <div className=" backdrop-blur-3xl text-left font-superLagendBoy text-[#FFFFFF] mt-12 rounded-xl border-none">
-              <table className="w-[100%]">
+            <div className=" overflow-x-auto backdrop-blur-xl text-left font-superLagendBoy text-[#FFFFFF] my-12 rounded-xl border-none">
+              <table className="w-full p-10">
                 <thead>
                   <tr>
                     <th className="p-6">Collection</th>
@@ -59,7 +59,7 @@ function Lend() {
 
                 <tbody>
                   {tableData.map((item, index) => (
-                    <tr className=" w-[95%] border-b-[1px] px-4 border-[#C3C0C0]">
+                    <tr className=" py-10 border-b-[1px] border-[#a9a9a9d8]  ">
                       <td className="p-4 flex gap-2 items-center">
                         <span>
                           <img src={item.avatar} alt="" />
@@ -81,7 +81,9 @@ function Lend() {
                       </td>
                       <td>{item.apy}</td>
                       <td className="ml-6">{item.duration}</td>
-                      <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-6 py-2 rounded-lg to-[#DBFF00]">Lend</button></td>
+                      <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-6 py-2 rounded-lg to-[#DBFF00]">LEND</button></td>
+                      <br />
+                    
                     </tr>
                   ))}
                 </tbody>
