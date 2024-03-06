@@ -19,24 +19,21 @@ function Loans() {
         price:"0",
         statusValue:"",
         status:"",
-        hr24:"0 in 24H",
-        day7:"0 in 7D",
+
     },
     {
         title:"LOANS IN 24H/12H",
         price:"1225/1375",
         statusValue:"",
         status:"",
-        hr24:"0 in 24H",
-        day7:"0 in 7D",
+
     },
     {
         title:"ACTIVE LOANS VOLUME",
         price:"0",
         statusValue:'0 in 24H <br/> 0 in 7D',
         status:"", 
-        hr24:"",
-        day7:"",
+
     },
     {
       title:"TOTAL VALUE LOCKED",
@@ -66,7 +63,7 @@ function Loans() {
                   <span>{item.price}</span>
                 </h1>
                 <div className="text-[10px]" dangerouslySetInnerHTML={{ __html: item.statusValue, _html:item.status}} />
-                {/* <span className="text-[10px]">{item.statusValue} </span> */}
+                <span className="text-[10px]">{item.status} </span>
               </div>
             </div>
             )}
