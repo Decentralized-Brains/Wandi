@@ -46,7 +46,7 @@ function Loans() {
     <div className="lend-section">
     <div className="main-page">
       <VideoBG />
-      <Nav btnText={"Select Profile"} />
+      <Nav btnText={"Select Wallet"} />
 
       <div className="container relative pt-36" >
         <div className="boxes ">
@@ -62,7 +62,7 @@ function Loans() {
                   <span>0</span>
                   <span>{item.price}</span>
                 </h1>
-                <div className="text-[10px]" dangerouslySetInnerHTML={{ __html: item.statusValue, _html:item.status}} />
+                <div className="text-[10px]" dangerouslySetInnerHTML={{ __html: item.statusValue}} />
                 <span className="text-[10px]">{item.status} </span>
               </div>
             </div>
