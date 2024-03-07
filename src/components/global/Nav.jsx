@@ -24,7 +24,9 @@ function Nav({ btnText }) {
                 </h1>
               </div>
               <div className="absolute bottom-1 left-1 text-6xl md:text-6xl max-sm:text-6xl">
-                <h1 className="font-twist text-[#E4E4E4]">WANDZ</h1>
+                <NavLink to={"/"}>
+                  <h1 className="font-twist text-[#E4E4E4]">WANDZ</h1>
+                </NavLink>
               </div>
             </div>
           </div>

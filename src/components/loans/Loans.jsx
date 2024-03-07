@@ -46,7 +46,7 @@ function Loans() {
     <div className="lend-section">
     <div className="main-page">
       <VideoBG />
-      <Nav btnText={"Select Wallet"} />
+      <Nav btnText={"Select Profile"} />
 
       <div className="container relative pt-36" >
         <div className="boxes ">

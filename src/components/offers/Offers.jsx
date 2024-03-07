@@ -33,7 +33,7 @@ function Offers() {
   return (
     <div className="offers-page">
       <VideoBG />
-      <Nav btnText={"Select Wallet"}/>
+      <Nav btnText={"Select Profile"}/>
       <div className="container relative">
         <div className="text-section font-superLagendBoy text-center pt-36 pb-20">
           <h1 className="text-[2.5rem] sm:text-[2rem] max-sm:text-[1.5rem] sm:p-4 text-gradient-bg leading-loose">
