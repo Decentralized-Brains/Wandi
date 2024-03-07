@@ -1,10 +1,15 @@
 .button-style{
     /* background: linear-gradient(45deg, rgba(35, 35, 35, 0.6), rgba(83, 98, 35, 1)); */
-    box-shadow: 1px 4px #DBFF00;
+    /* box-shadow: 1px 4px #DBFF00; */
+    border: solid 1px #DBFF00;
+    border-bottom: solid 4px #DBFF00;
+    border-radius: 10px;
+    padding: 6px;
+    
 }
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (max-width: 800px) {
     .nav-items{
       display: flex;
       gap: 1.5rem;
@@ -21,3 +26,5 @@
         padding: 4px;
     }
   }
+
+  
