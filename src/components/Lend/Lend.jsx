@@ -44,7 +44,7 @@ function Lend() {
                 </button>
               </div>
             </div>
-            <div className=" overflow-x-auto backdrop-blur-xl text-left font-superLagendBoy text-[#FFFFFF] my-12 rounded-xl border-none">
+            <div className="px-6 overflow-x-auto backdrop-blur-xl text-left font-superLagendBoy text-[#FFFFFF] my-12 rounded-xl border-none">
               <table className="w-full p-10">
                 <thead>
                   <tr className="max-sm:text-[11px]">
