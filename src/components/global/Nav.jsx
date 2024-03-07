@@ -15,8 +15,8 @@ function Nav({btnText}) {
   };
   return (
     <div className="">
-      <div className="relative pt-4 w-full">
-        <div className="container flex items-center justify-between">
+      <div className="relative pt-4 w-full ">
+        <div className="container flex items-center justify-between nav-responsive">
           <div className="mx-auto md:mx-0 relative flex text-center items-center font-twist text-3xl md:text-5xl tracking-tighter lg:w-2/6">
             <div>
               {/* <video
@@ -50,7 +50,7 @@ function Nav({btnText}) {
           <div className="hidden md:flex md:flex-1 md:justify-end md:items-center md:gap-8">
             <div className="nav-items items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
               <NavLink to={"/lend"}>
-                <h1 className="text-lg">LEND</h1>
+                <h1 className="text-lg ">LEND</h1>
               </NavLink>
               <NavLink to={"/offers"}>
                 <h1 className="text-lg">OFFERS</h1>

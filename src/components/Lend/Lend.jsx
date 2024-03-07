@@ -49,10 +49,10 @@ function Lend() {
                 <thead>
                   <tr className="max-sm:text-[11px]">
                     <th className="p-6">Collection</th>
-                    <th className="p-0 max-sm:px-4">Available Pool</th>
-                    <th className="p-0 max-sm:px-4">Best offer</th>
-                    <th className="p-0 max-sm:px-4">APY</th>
-                    <th className="p-0 max-sm:px-4">Duration</th>
+                    <th className="pl-4 max-sm:px-4">Available Pool</th>
+                    <th className="pl-4 max-sm:px-4">Best offer</th>
+                    <th className="pl-4 max-sm:px-4">APY</th>
+                    <th className="pl-4 max-sm:px-4">Duration</th>
                     <th></th>
                   </tr>
                 </thead>
@@ -60,27 +60,27 @@ function Lend() {
                 <tbody>
                   {tableData.map((item, index) => (
                     <tr className=" py-10 border-b-[1px] max-sm:px-4 border-[#a9a9a9d8]  ">
-                      <td className="p-4 max-sm:px-4 flex gap-2 items-center max-sm:text-[11px]">
+                      <td className="p-4 pl-4 max-sm:px-4 flex gap-2 items-center max-sm:text-[11px]">
                         <span className="max-sm:w-6">
                           <img src={item.avatar} alt="" />
                         </span>
                         {item.collection}
                       </td>
-                      <td className="max-sm:text-[11px] max-sm:px-4">
+                      <td className=" pl-4 max-sm:text-[11px] max-sm:px-4">
                         {item.pool}
                         <br />
-                        <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
+                        <span className="text-[9px]  max-sm:text-[8px] text-[#B5B5B5]">
                           {item.poolOffers}
                         </span>
                       </td>
-                      <td className="max-sm:text-[11px] max-sm:px-4">
+                      <td className="max-sm:text-[11px] pl-4 max-sm:px-4">
                         {item.bestOffer} <br />
                         <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                           {item.offerToken}
                         </span>{" "}
                       </td>
-                      <td className="max-sm:text-[11px] max-sm:px-4">{item.apy}</td>
-                      <td className="ml-6 max-sm:text-[11px] max-sm:px-4">{item.duration}</td>
+                      <td className="max-sm:text-[11px] pl-4 max-sm:px-4">{item.apy}</td>
+                      <td className="ml-6 max-sm:text-[11px] pl-4 max-sm:px-4">{item.duration}</td>
                       <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-6 py-2 max-sm:text-[11px] max-sm:px-4 rounded-lg to-[#DBFF00]">LEND</button></td>
                       <br />
                     

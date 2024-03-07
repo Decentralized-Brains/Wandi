@@ -60,7 +60,7 @@ function Offers() {
 
           <div className="boxes max-sm:px-2">
 
-            <div className="flex max-sm:flex-col max-sm:gap-4 justify-between ">
+            <div className="flex max-sm:flex-col gap-4 max-sm:gap-4 justify-between ">
             {datas.map((item,index)=>
               <div className="text-[#FFFFFF] rounded-lg border border-[#DBFF00] border-b-4 font-superLagendBoy backdrop-blur-3xl p-6 py-6 flex flex-col justify-between">
                 <h1 className="text-[10px]">

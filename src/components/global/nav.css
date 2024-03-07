@@ -3,3 +3,21 @@
     box-shadow: 1px 4px #DBFF00;
 }
 
+
+@media only screen and (min-width: 800px) {
+    .nav-items{
+      display: flex;
+      gap: 1.5rem;
+      
+
+    }
+    .nav-items h1{
+        font-size: small;
+    }
+
+    .nav-btn button{
+
+        font-size: 1rem;
+        padding: 4px;
+    }
+  }

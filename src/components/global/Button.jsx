@@ -1,9 +1,10 @@
 import React from "react";
 import video from "../../assets/background/buttonBG.mp4"
+import "./nav.css"
 
 function Button({btnText}) {
   return (
-    <div>
+    <div className="nav-btn">
       <div style={{ position: "relative", width: "fit-content" }}>
         <button
           className="relative button-style border border-[#DBFF00] px-4 py-2 bor"

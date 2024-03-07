@@ -94,15 +94,15 @@ function Loans() {
             <table className="w-full">
               <thead>
                 <tr className="max-sm:text-[11px] text-[12px]">
-                  <th className="px-4">IMAGE</th>
-                  <th className="px-4">NAME</th>
-                  <th className="px-4">ACTIVE LOANS</th>
-                  <th className="px-4">LOANS in 24H</th>
-                  <th className="px-4">OFFERS</th>
-                  <th className="px-4">FLOOR</th>
-                  <th className="px-4">LTV</th>
-                  <th className="px-4">LIQUIDITY</th>
-                  <th className="px-4">FORECLOSURES</th>
+                  <th className="px-4 py-2">IMAGE</th>
+                  <th className="px-4 py-2">NAME</th>
+                  <th className="px-4 py-2">ACTIVE LOANS</th>
+                  <th className="px-4 py-2">LOANS in 24H</th>
+                  <th className="px-4 py-2">OFFERS</th>
+                  <th className="px-4 py-2">FLOOR</th>
+                  <th className="px-4 py-2">LTV</th>
+                  <th className="px-4 py-2">LIQUIDITY</th>
+                  <th className="px-4 py-2">FORECLOSURES</th>
                   <th></th>
                 </tr>
               </thead>
