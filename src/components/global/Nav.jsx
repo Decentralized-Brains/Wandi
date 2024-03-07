@@ -5,10 +5,9 @@ import { MdMenu } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
-import video from "../../assets/background/buttonBG.mp4"
+import video from "../../assets/background/buttonBG.mp4";
 
-
-function Nav({btnText}) {
+function Nav({ btnText }) {
   const [showMenu, setShowMenu] = useState(false);
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -18,22 +17,15 @@ function Nav({btnText}) {
       <div className="relative pt-4 w-full ">
         <div className="container flex items-center justify-between nav-responsive">
           <div className="mx-auto md:mx-0 relative flex text-center items-center font-twist text-3xl md:text-5xl tracking-tighter lg:w-2/6">
-            <div>
-              {/* <video
-                className="absolute top-0 left-0 w-full h-full object-cover"
-                src={video}
-                muted
-                loop
-                autoPlay
-              ></video> */}
-              <h1 className="animate-text duration-1000 bg-gradient-to-t from-indigo-500  via-pink-500 to-red-500 bg-clip-text font-twist text-6xl sm:text-6xl md:text-6xl text-transparent">
-                WANDZ
-              </h1>
-            </div>
-            <div className="absolute bottom-1 left-1 text-6xl md:text-6xl max-sm:text-6xl">
-              <NavLink to={'/'}>
-              <h1 className="font-twist text-[#E4E4E4]">WANDZ</h1>
-              </NavLink>
+            <div className="relative">
+              <div className="relative">
+                <h1 className="logo-mask font-twist text-6xl sm:text-6xl md:text-6xl">
+                  WANDZ
+                </h1>
+              </div>
+              <div className="absolute bottom-1 left-1 text-6xl md:text-6xl max-sm:text-6xl">
+                <h1 className="font-twist text-[#E4E4E4]">WANDZ</h1>
+              </div>
             </div>
           </div>
           <div className="right-nav md:hidden">
@@ -62,7 +54,7 @@ function Nav({btnText}) {
                 <a className="text-lg a">LOANS</a>
               </NavLink>
               {/* Profile Video */}
-                <Button btnText={btnText}/>
+              <Button btnText={btnText} />
             </div>
           </div>
         </div>

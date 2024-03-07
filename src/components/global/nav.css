@@ -29,12 +29,13 @@
   }
 
 
+
+/* active border navigation  */
   .nav-items a {
     text-decoration: none;
     position: relative;
   }
   
-  /* Define the border image */
   .nav-items a.active::after {
     content: "";
     position: absolute;
@@ -48,6 +49,12 @@
   }
 
 
+/* logo animation  */
 
+  .logo-mask{
 
-  
+    background: url("../../assets/background/activeBargif.gif");
+    background-size: cover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

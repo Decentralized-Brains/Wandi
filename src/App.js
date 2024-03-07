@@ -4,7 +4,6 @@ import Offers from "./components/offers/Offers";
 import Loans from "./components/loans/Loans";
 import Borrow from "./components/borrow/Borrow";
 import { Route, Routes } from "react-router-dom"
-import Logo from "./components/logo/Logo";
 
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
       <Route path="/loans" element={<Loans/>} />
       <Route path="/borrow" element={<Borrow />} />
       </Routes>
-      {/* <Logo /> */}
     </div>
   );
 }
