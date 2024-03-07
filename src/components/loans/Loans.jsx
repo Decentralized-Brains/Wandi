@@ -90,80 +90,80 @@ function Loans() {
               </button>
             </div>
           </div>
-          <div className=" overflow-x-auto backdrop-blur-xl text-left font-superLagendBoy text-[#FFFFFF] my-12 rounded-xl border-none">
-            <table className="w-full p-10">
+          <div className="px-6  overflow-x-auto backdrop-blur-xl text-left font-superLagendBoy text-[#FFFFFF] my-12 rounded-xl border-none">
+            <table className="w-full">
               <thead>
-                <tr>
-                  <th className="p-6 max-sm:px-4 text-[11px]">IMAGE</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">NAME</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">ACTIVE LOANS</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">LOANS in 24H</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">OFFERS</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">FLOOR</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">LTV</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">LIQUIDITY</th>
-                  <th className="p-0 max-sm:px-4 text-[11px]">FORECLOSURES</th>
+                <tr className="max-sm:text-[11px] text-[12px]">
+                  <th className="px-4">IMAGE</th>
+                  <th className="px-4">NAME</th>
+                  <th className="px-4">ACTIVE LOANS</th>
+                  <th className="px-4">LOANS in 24H</th>
+                  <th className="px-4">OFFERS</th>
+                  <th className="px-4">FLOOR</th>
+                  <th className="px-4">LTV</th>
+                  <th className="px-4">LIQUIDITY</th>
+                  <th className="px-4">FORECLOSURES</th>
                   <th></th>
                 </tr>
               </thead>
 
               <tbody>
                 {tableLoanData.map((item, index) => (
-                  <tr className=" max-sm:px-4 py-10 border-b-[1px] border-[#a9a9a9d8]  ">
-                    <td className="p-4 max-sm:px-4 flex gap-2 items-center">
+                  <tr className=" py-10 border-b-[1px] border-[#a9a9a9d8]  ">
+                    <td className="p-4 px-4 flex gap-2 items-center">
                       <span>
                         <img src={item.avatar} alt="" />
                       </span>
                       
                     </td>
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.collection}
                       <br />
-                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
+                      <span className="text-[9px] text-[#B5B5B5]">
                         {item.collectionPer}
                       </span>
                     </td>
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                       {item.activeLoans} <br />
-                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
+                      <span className="text-[9px] text-[#B5B5B5]">
                         {item.LoanActive}
                       </span>{" "}
                     </td>
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.loanIn24}
                       <br />
-                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
+                      <span className="text-[9px] text-[#B5B5B5]">
                         {item.loanIn24Paid}
                       </span>
                     </td>
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.offerToken}                      
                     </td>
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.floor}                      
                     </td>
-                    <td className="px-2 max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.ltv}                      
                     </td>
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.liq}
                       <br />
-                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
+                      <span className="text-[9px] text-[#B5B5B5]">
                         {item.liqPrice}
                       </span>
                     </td>
 
-                    <td className="max-sm:px-4 max-sm:text-[11px]">
+                    <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.forClosure}
                       <br />
-                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
+                      <span className="text-[9px] text-[#B5B5B5]">
                         {item.forResult}
                       </span>
                     </td>
 
-                    <td className="max-sm:px-4 max-sm:text-[11px]">{item.apy}</td>
-                    <td className="ml-6 max-sm:px-4 max-sm:text-[11px]">{item.duration}</td>
-                    <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-6 py-2 max-sm:px-4 max-sm:text-[10px] rounded-lg to-[#DBFF00]">LEND</button></td>
+                    <td className="text-[12px] max-sm:text-[11px]">{item.apy}</td>
+                    <td className="text-[12px] max-sm:text-[11px]">{item.duration}</td>
+                    <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-4 py-2 text-[12px] max-sm:text-[11px] rounded-lg to-[#DBFF00]">LEND</button></td>
                     <br />
                   
                   </tr>
