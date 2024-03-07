@@ -51,7 +51,7 @@ function Loans() {
       <div className="container relative pt-36" >
         <div className="boxes ">
 
-          <div className="flex max-sm:flex-wrap justify-between">
+          <div className="flex max-sm:flex-col max-sm:gap-4 justify-between">
           {datas.map((item,index)=>
             <div className="text-[#FFFFFF] mx-4 rounded-lg border border-[#DBFF00] border-b-4 font-superLagendBoy flex-wrap backdrop-blur-3xl p-6 py-6 flex flex-col justify-between">
               <h1 className="text-[10px]">
@@ -94,76 +94,76 @@ function Loans() {
             <table className="w-full p-10">
               <thead>
                 <tr>
-                  <th className="p-6 text-[11px]">IMAGE</th>
-                  <th className="p-0 text-[11px]">NAME</th>
-                  <th className="p-0 text-[11px]">ACTIVE LOANS</th>
-                  <th className="p-0 text-[11px]">LOANS in 24H</th>
-                  <th className="p-0 text-[11px]">OFFERS</th>
-                  <th className="p-0 text-[11px]">FLOOR</th>
-                  <th className="p-0 text-[11px]">LTV</th>
-                  <th className="p-0 text-[11px]">LIQUIDITY</th>
-                  <th className="p-0 text-[11px]">FORECLOSURES</th>
+                  <th className="p-6 max-sm:px-4 text-[11px]">IMAGE</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">NAME</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">ACTIVE LOANS</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">LOANS in 24H</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">OFFERS</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">FLOOR</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">LTV</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">LIQUIDITY</th>
+                  <th className="p-0 max-sm:px-4 text-[11px]">FORECLOSURES</th>
                   <th></th>
                 </tr>
               </thead>
 
               <tbody>
                 {tableLoanData.map((item, index) => (
-                  <tr className=" py-10 border-b-[1px] border-[#a9a9a9d8]  ">
-                    <td className="p-4 flex gap-2 items-center">
+                  <tr className=" max-sm:px-4 py-10 border-b-[1px] border-[#a9a9a9d8]  ">
+                    <td className="p-4 max-sm:px-4 flex gap-2 items-center">
                       <span>
                         <img src={item.avatar} alt="" />
                       </span>
                       
                     </td>
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                     {item.collection}
                       <br />
-                      <span className="text-[9px] text-[#B5B5B5]">
+                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                         {item.collectionPer}
                       </span>
                     </td>
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                       {item.activeLoans} <br />
-                      <span className="text-[9px] text-[#B5B5B5]">
+                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                         {item.LoanActive}
                       </span>{" "}
                     </td>
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                     {item.loanIn24}
                       <br />
-                      <span className="text-[9px] text-[#B5B5B5]">
+                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                         {item.loanIn24Paid}
                       </span>
                     </td>
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                     {item.offerToken}                      
                     </td>
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                     {item.floor}                      
                     </td>
-                    <td className="px-2">
+                    <td className="px-2 max-sm:px-4 max-sm:text-[11px]">
                     {item.ltv}                      
                     </td>
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                     {item.liq}
                       <br />
-                      <span className="text-[9px] text-[#B5B5B5]">
+                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                         {item.liqPrice}
                       </span>
                     </td>
 
-                    <td className="">
+                    <td className="max-sm:px-4 max-sm:text-[11px]">
                     {item.forClosure}
                       <br />
-                      <span className="text-[9px] text-[#B5B5B5]">
+                      <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                         {item.forResult}
                       </span>
                     </td>
 
-                    <td>{item.apy}</td>
-                    <td className="ml-6">{item.duration}</td>
-                    <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-6 py-2 rounded-lg to-[#DBFF00]">LEND</button></td>
+                    <td className="max-sm:px-4 max-sm:text-[11px]">{item.apy}</td>
+                    <td className="ml-6 max-sm:px-4 max-sm:text-[11px]">{item.duration}</td>
+                    <td><button className="bg-gradient-to-r from-[#159F2C] text-black px-6 py-2 max-sm:px-4 max-sm:text-[10px] rounded-lg to-[#DBFF00]">LEND</button></td>
                     <br />
                   
                   </tr>

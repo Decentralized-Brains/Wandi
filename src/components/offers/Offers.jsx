@@ -39,7 +39,7 @@ function Offers() {
           <h1 className="text-[2.5rem] sm:text-[2rem] max-sm:text-[1.5rem] sm:p-4 text-gradient-bg leading-loose">
             MY OFFERS AND CONTRACTS
           </h1>
-          <p className="font-superLagendBoy text-xl text-[#FFFFFF]">
+          <p className="font-superLagendBoy text-xl max-sm:text-lg text-[#FFFFFF]">
             Browse collections below, and name your price. The current best
             offer will be shown to borrowers. To take your offer, they lock in
             an NFT from that collection to use as collateral. You will be repaid
@@ -58,9 +58,9 @@ function Offers() {
             </h1>
           </div>
 
-          <div className="boxes">
+          <div className="boxes max-sm:px-2">
 
-            <div className="flex max-sm:flex-wrap justify-between">
+            <div className="flex max-sm:flex-col max-sm:gap-4 justify-between ">
             {datas.map((item,index)=>
               <div className="text-[#FFFFFF] rounded-lg border border-[#DBFF00] border-b-4 font-superLagendBoy backdrop-blur-3xl p-6 py-6 flex flex-col justify-between">
                 <h1 className="text-[10px]">
