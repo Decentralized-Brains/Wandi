@@ -48,18 +48,18 @@ function Nav({btnText}) {
             </div>
           </div>
           <div className="hidden md:flex md:flex-1 md:justify-end md:items-center md:gap-8">
-            <div className="nav-items items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
+            <div className="nav-items ul items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
               <NavLink to={"/lend"}>
-                <h1 className="text-lg ">LEND</h1>
+                <a className="text-lg a">LEND</a>
               </NavLink>
               <NavLink to={"/offers"}>
-                <h1 className="text-lg">OFFERS</h1>
+                <a className="text-lg a">OFFERS</a>
               </NavLink>
               <NavLink to={"/borrow"}>
-                <h1 className="text-lg">BORROW</h1>
+                <a className="text-lg a">BORROW</a>
               </NavLink>
               <NavLink to={"/loans"}>
-                <h1 className="text-lg">LOANS</h1>
+                <a className="text-lg a">LOANS</a>
               </NavLink>
               {/* Profile Video */}
                 <Button btnText={btnText}/>
