@@ -59,7 +59,7 @@ function OrderBook() {
               </h1>
               <div className="flex flex-col justify-between mt-2">
                 <h1 className="flex gap-1">
-                  <span>0</span>
+                  <span>Ŀ</span>
                   <span>{item.price}</span>
                 </h1>
                 <div className="text-[10px]" dangerouslySetInnerHTML={{ __html: item.statusValue}} />
@@ -140,12 +140,14 @@ function OrderBook() {
                     {item.offerToken}                      
                     </td>
                     <td className="px-4 text-[12px] max-sm:text-[11px]">
+                    <span className="text-lg mr-1">Ŀ</span>
                     {item.floor}                      
                     </td>
                     <td className="px-4 text-[12px] max-sm:text-[11px]">
                     {item.ltv}                      
                     </td>
                     <td className="px-4 text-[12px] max-sm:text-[11px]">
+                      <span className="text-lg mr-1">Ŀ</span>
                     {item.liq}
                       <br />
                       <span className="text-[9px] text-[#B5B5B5]">

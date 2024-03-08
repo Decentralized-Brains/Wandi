@@ -67,14 +67,14 @@ function Lend() {
                         {item.collection}
                       </td>
                       <td className=" pl-4 max-sm:text-[11px] max-sm:px-4">
-                        {item.pool}
+                      <span className="text-lg mr-1">Ŀ</span>{item.pool}
                         <br />
                         <span className="text-[9px]  max-sm:text-[8px] text-[#B5B5B5]">
                           {item.poolOffers}
                         </span>
                       </td>
                       <td className="max-sm:text-[11px] pl-4 max-sm:px-4">
-                        {item.bestOffer} <br />
+                      <span className="text-lg mr-1">Ŀ</span>{item.bestOffer} <br />
                         <span className="text-[9px] max-sm:text-[8px] text-[#B5B5B5]">
                           {item.offerToken}
                         </span>{" "}
