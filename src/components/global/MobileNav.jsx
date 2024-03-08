@@ -1,6 +1,7 @@
 import {React,useState} from 'react'
 import { NavLink } from 'react-router-dom'
 import Button from './Button'
+
 function MobileNav({showMenu}) {
     
   return (
@@ -24,7 +25,7 @@ function MobileNav({showMenu}) {
               <NavLink to={"/borrow"}>
                 <h1 className="text-lg">BORROW</h1>
               </NavLink>
-              <NavLink to={"/loans"}>
+              <NavLink to={"/orderBook"}>
                 <h1 className="text-lg">LOANS</h1>
               </NavLink>
               <Button btnText={"Select Profile"} />

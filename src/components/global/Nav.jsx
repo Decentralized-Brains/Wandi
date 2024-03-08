@@ -55,7 +55,8 @@ function Nav({ btnText }) {
               <NavLink to={"/loans"}>
                 <a className="text-lg a">LOANS</a>
               </NavLink>
-              {/* Profile Video */}
+
+
               <Button btnText={btnText} />
             </div>
           </div>

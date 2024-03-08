@@ -2,7 +2,7 @@ import React from 'react'
 import Bg from "../../assets/background/pearl.mp4";
 import globe from "../../assets/logo/globe.gif"
 import Bg2 from "../../assets/background/image.png"
-
+import { NavLink } from "react-router-dom";
 
 function VideoBG() {
   return (
@@ -17,8 +17,12 @@ function VideoBG() {
             muted
             loop
           ></video>
-          <div>
-            <img className='absolute max-sm:hidden bg-fixed z-10 bottom-10 right-10' width={100} src={globe} alt="" />
+          <div className='nav-glob absolute max-sm:hidden bg-fixed z-10 bottom-10 right-10'>
+            <NavLink to={"/orderbook"}>
+              <a className=''>
+                <img className='' width={100} src={globe} alt="" />
+                </a>
+            </NavLink>
           </div>
         </div>
     </div>
