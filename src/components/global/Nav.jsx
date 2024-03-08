@@ -24,7 +24,7 @@ function Nav({ btnText }) {
                 </h1>
               </div>
               <div className="absolute bottom-1 left-1 text-6xl md:text-6xl max-sm:text-6xl">
-                <NavLink to={"/"}>
+                <NavLink to={"/"} duration={500}>
                   <h1 className="font-twist text-[#E4E4E4]">WANDZ</h1>
                 </NavLink>
               </div>
@@ -43,16 +43,16 @@ function Nav({ btnText }) {
           </div>
           <div className="hidden md:flex md:flex-1 md:justify-end md:items-center md:gap-8">
             <div className="nav-items ul items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
-              <NavLink to={"/lend"}>
+              <NavLink to={"/lend"} duration={500}>
                 <a className="text-lg a">LEND</a>
               </NavLink>
-              <NavLink to={"/offers"}>
+              <NavLink to={"/offers"} duration={500}>
                 <a className="text-lg a">OFFERS</a>
               </NavLink>
-              <NavLink to={"/borrow"}>
+              <NavLink to={"/borrow"} duration={500}>
                 <a className="text-lg a">BORROW</a>
               </NavLink>
-              <NavLink to={"/loans"}>
+              <NavLink to={"/loans"} duration={500}>
                 <a className="text-lg a">LOANS</a>
               </NavLink>
 

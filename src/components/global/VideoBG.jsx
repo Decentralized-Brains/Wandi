@@ -17,14 +17,15 @@ function VideoBG() {
             muted
             loop
           ></video>
-          <div className='nav-glob absolute bg-fixed z-10 bottom-10 right-10'>
+          
+        </div>
+        <div className='nav-glob  fixed z-10 bottom-10 right-10'>
             <NavLink to={"/orderbook"}>
               <a className=''>
                 <img className='' width={100} src={globe} alt="" />
                 </a>
             </NavLink>
           </div>
-        </div>
     </div>
   )
 }
