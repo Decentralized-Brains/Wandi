@@ -42,9 +42,10 @@ function Loans() {
           <p className="font-superLagendBoy text-xl max-sm:text-lg text-[#FFFFFF]">
           Here are the NFTs you borrowed against. You must pay these in full by the expiration date in order to keep your NFT.
           </p>
+          <h1 className="mt-24 font-superLagendBoy text-4xl max-sm:text-lg text-[#FFFFFF]">No active or completed loans.</h1>
         </div>
 
-        <div className="second-sec pt-32 flex flex-col gap-24">
+        <div className="second-sec pt-16 flex flex-col gap-24">
           <div>
             <h1 className=" font-superLagendBoy flex gap-2 text-[#FFFFFF] items-center text-sm">
               Download history (CSV){" "}
