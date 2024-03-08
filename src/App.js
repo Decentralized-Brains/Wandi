@@ -4,6 +4,7 @@ import Offers from "./components/offers/Offers";
 import OrderBook from "./components/orderBook/OrderBook";
 import Borrow from "./components/borrow/Borrow";
 import { Route, Routes } from "react-router-dom"
+import Loans from "./components/loans/Loans";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Route path="/offers" element={<Offers />} />
       <Route path="/orderbook" element={<OrderBook/>} />
       <Route path="/borrow" element={<Borrow />} />
+      <Route path="/loans" element={<Loans />} />
       </Routes>
 
     </div>
