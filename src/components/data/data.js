@@ -9,7 +9,7 @@ export const tableData = [
         pool:"158.32",
         poolOffers:"972 of 1453 offers taken",
         bestOffer:"8.32",
-        offerToken:'3.25 SOL last loan taken',
+        offerToken:'3.25 LYX last loan taken',
         apy:"120%",
         duration:"11d"
     },
@@ -20,7 +20,7 @@ export const tableData = [
         pool:"158.32",
         poolOffers:"972 of 1453 offers taken",
         bestOffer:"8.32",
-        offerToken:'3.25 SOL last loan taken',
+        offerToken:'3.25 LYX last loan taken',
         apy:"120%",
         duration:"11d"
     },
@@ -31,7 +31,7 @@ export const tableData = [
         pool:"158.32",
         poolOffers:"972 of 1453 offers taken",
         bestOffer:"8.32",
-        offerToken:'3.25 SOL last loan taken',
+        offerToken:'3.25 LYX last loan taken',
         apy:"120%",
         duration:"11d"
     },
@@ -42,7 +42,7 @@ export const tableData = [
         pool:"158.32",
         poolOffers:"972 of 1453 offers taken",
         bestOffer:"8.32",
-        offerToken:'3.25 SOL last loan taken',
+        offerToken:'3.25 LYX last loan taken',
         apy:"120%",
         duration:"11d"
     },
@@ -53,7 +53,7 @@ export const tableData = [
         pool:"158.32",
         poolOffers:"972 of 1453 offers taken",
         bestOffer:"8.32",
-        offerToken:'3.25 SOL last loan taken',
+        offerToken:'3.25 LYX last loan taken',
         apy:"120%",
         duration:"11d"
     },

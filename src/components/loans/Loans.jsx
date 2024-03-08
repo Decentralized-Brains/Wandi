@@ -45,7 +45,7 @@ function Loans() {
           <h1 className="mt-24 font-superLagendBoy text-4xl max-sm:text-lg text-[#FFFFFF]">No active or completed loans.</h1>
         </div>
 
-        <div className="second-sec pt-16 flex flex-col gap-24">
+        <div className="second-sec py-16 flex flex-col gap-24">
           <div>
             <h1 className=" font-superLagendBoy flex gap-2 text-[#FFFFFF] items-center text-sm">
               Download history (CSV){" "}
