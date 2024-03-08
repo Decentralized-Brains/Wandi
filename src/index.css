@@ -21,7 +21,7 @@
 
 
 .text-gradient-bg{
-  background: -webkit-linear-gradient(180deg, #caf00cf1,#d7ddbd);
+  background: -webkit-linear-gradient(180deg, #eff6af ,#caf00cf1);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
