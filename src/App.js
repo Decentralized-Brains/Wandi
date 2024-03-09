@@ -5,12 +5,12 @@ import OrderBook from "./components/orderBook/OrderBook";
 import Borrow from "./components/borrow/Borrow";
 import { Route, Routes } from "react-router-dom"
 import Loans from "./components/loans/Loans";
-
+import VideoBG from "./components/global/VideoBG";
 
 function App() {
   return (
     <div className="App">
-
+      <VideoBG />
       <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/lend" element={<Lend />} />

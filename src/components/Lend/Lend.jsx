@@ -9,7 +9,7 @@ function Lend() {
   return (
     <div className="lend-section">
       <div className="main-page">
-        <VideoBG />
+        
         <Nav btnText={"Select Profile"} />
         <div className="container relative">
           <div className="text-section font-superLagendBoy text-center pt-36 pb-20">

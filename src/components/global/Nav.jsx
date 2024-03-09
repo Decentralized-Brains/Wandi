@@ -12,6 +12,25 @@ function Nav({ btnText }) {
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  const links = [
+    {
+      id:1,
+      link:"LEND"
+    },
+    {
+      id:2,
+      link:"OFFERS"
+    },
+    {
+      id:3,
+      link:"BORROW"
+    },
+    {
+      id:4,
+      link:"LOANS"
+    }
+  ]
   return (
     <div className="">
       <div className="relative pt-4 w-full ">
@@ -43,10 +62,13 @@ function Nav({ btnText }) {
           </div>
           <div className="hidden md:flex md:flex-1 md:justify-end md:items-center md:gap-8">
             <div className="nav-items ul items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
-              <NavLink to={"/lend"} duration={500}>
-                <a className="text-lg a">LEND</a>
+              
+              {links.map(({link,id})=>
+              <NavLink to={"/"+link} duration={500}>
+                <a className="text-lg a">{link}</a>
               </NavLink>
-              <NavLink to={"/offers"} duration={500}>
+              )}
+              {/* <NavLink to={"/offers"} duration={500}>
                 <a className="text-lg a">OFFERS</a>
               </NavLink>
               <NavLink to={"/borrow"} duration={500}>
@@ -54,7 +76,7 @@ function Nav({ btnText }) {
               </NavLink>
               <NavLink to={"/loans"} duration={500}>
                 <a className="text-lg a">LOANS</a>
-              </NavLink>
+              </NavLink> */}
 
 
               <Button btnText={btnText} />
