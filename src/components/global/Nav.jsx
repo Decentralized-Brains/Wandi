@@ -76,7 +76,7 @@ function Nav({ btnText }) {
           </NavLink>
           {location.pathname === `/${link}` && (
             <video
-              className="h-[3px] w-full object-cover"
+              className="h-[4px] w-full object-cover"
               src={Bg}
               type="video/webm"
               autoPlay
