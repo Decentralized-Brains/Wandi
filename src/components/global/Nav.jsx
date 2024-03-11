@@ -1,36 +1,39 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import "./nav.css";
 import MobileNav from "./MobileNav";
 import { MdMenu } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
-import { NavLink } from "react-router-dom";
+import { NavLink,useLocation  } from "react-router-dom";
 import Button from "./Button";
-import video from "../../assets/background/buttonBG.mp4";
+import Bg from "../../assets/background/buttonBG.mp4";
 
 function Nav({ btnText }) {
   const [showMenu, setShowMenu] = useState(false);
+  const location = useLocation();
+
+
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
   const links = [
     {
-      id:1,
-      link:"LEND"
+      id: 1,
+      link: "LEND",
     },
     {
-      id:2,
-      link:"OFFERS"
+      id: 2,
+      link: "OFFERS",
     },
     {
-      id:3,
-      link:"BORROW"
+      id: 3,
+      link: "BORROW",
     },
     {
-      id:4,
-      link:"LOANS"
-    }
-  ]
+      id: 4,
+      link: "LOANS",
+    },
+  ];
   return (
     <div className="">
       <div className="relative pt-4 w-full ">
@@ -61,26 +64,34 @@ function Nav({ btnText }) {
             </div>
           </div>
           <div className="hidden md:flex md:flex-1 md:justify-end md:items-center md:gap-8">
-            <div className="nav-items ul items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
+            <div className="nav-container">
+            <div className="nav-items  ul items-center flex gap-8 font-superLagendBoy text-[#FFFFFF]">
+      {links.map(({ link, id }) => (
+        <div key={id}>
+          <NavLink
+            to={"/" + link}
+            duration={500}
+          >
+            <a className="text-lg">{link}</a>
+          </NavLink>
+          {location.pathname === `/${link}` && (
+            <video
+              className="h-[3px] w-full object-cover"
+              src={Bg}
+              type="video/webm"
+              autoPlay
+              muted
+              loop
+            />
+          )}
+        </div>
+      ))}
+      <Button btnText={btnText} />
+    </div>
+
               
-              {links.map(({link,id})=>
-              <NavLink to={"/"+link} duration={500}>
-                <a className="text-lg a">{link}</a>
-              </NavLink>
-              )}
-              {/* <NavLink to={"/offers"} duration={500}>
-                <a className="text-lg a">OFFERS</a>
-              </NavLink>
-              <NavLink to={"/borrow"} duration={500}>
-                <a className="text-lg a">BORROW</a>
-              </NavLink>
-              <NavLink to={"/loans"} duration={500}>
-                <a className="text-lg a">LOANS</a>
-              </NavLink> */}
-
-
-              <Button btnText={btnText} />
             </div>
+            
           </div>
         </div>
       </div>

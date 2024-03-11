@@ -45,7 +45,7 @@ function OrderBook() {
   return (
     <div className="lend-section">
     <div className="main-page">
-      <VideoBG />
+      {/* <VideoBG /> */}
       <Nav btnText={"Select Profile"} />
 
       <div className="container relative pt-36" >

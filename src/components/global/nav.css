@@ -31,23 +31,27 @@
 
 
 /* active border navigation  */
-  .nav-items a {
+  /* .nav-items a {
     text-decoration: none;
     position: relative;
   }
-  
-  .nav-items a.active::after {
-    content: "";
+
+  .nav-items video{
     position: absolute;
-    left: 0;
-    bottom: -2px; 
-    width: 100%;
-    height: 3px; /* Thickness of the border */
-    background-image: url('../../assets/background/activeBargif.gif'); 
-    background-repeat: repeat-x; 
+  } */
   
-  }
+/* .nav-items a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px; 
+  width: 100%;
+  height: 3px;  */
+  /* background: url('../../assets/background/activeBar.mp4'); Replace with your background image */
+  /* background-repeat: repeat-x;
   
+  }  */
+
 
   .nav-glob a.active::after{
     content: "";

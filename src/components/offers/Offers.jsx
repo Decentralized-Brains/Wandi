@@ -7,7 +7,7 @@ function Offers() {
     
   return (
     <div className="offers-page">
-      <VideoBG />
+      {/* <VideoBG /> */}
       <Nav btnText={"Select Profile"}/>
       <div className="container relative">
       <div className="text-section font-superLagendBoy text-center pt-36 pb-20">
