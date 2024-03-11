@@ -70,12 +70,20 @@
 
 /* logo animation  */
 
-  .logo-mask{
+.logo-mask {
+  background: url("../../assets/background/activeBargif.gif");
+  background-size: cover;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: slideBackground 5s steps(1) infinite;
+}
 
-    background: url("../../assets/background/activeBargif.gif");
-    background-size: cover;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+@keyframes slideBackground {
+  0% {
+    background-position: 0 0;
   }
+  100% {
+    background-position: 100% 0;
+  }
+}
 
- 
