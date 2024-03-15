@@ -5,7 +5,7 @@ import { MdMenu } from "react-icons/md";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink,useLocation  } from "react-router-dom";
 import Button from "./Button";
-import Bg from "../../assets/background/buttonBG.mp4";
+import Bg from "../../assets/background/video.webp";
 
 function Nav({ btnText }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -75,14 +75,15 @@ function Nav({ btnText }) {
             <a className="text-lg">{link}</a>
           </NavLink>
           {location.pathname === `/${link}` && (
-            <video
-              className="h-[4px] w-full object-cover"
-              src={Bg}
-              type="video/webm"
-              autoPlay
-              muted
-              loop
-            />
+            <img src={Bg} className="h-[4px] w-full object-cover"></img>
+            // <video
+            //   className="h-[4px] w-full object-cover"
+            //   src={Bg}
+            //   type="video/webm"
+            //   autoPlay
+            //   muted
+            //   loop
+            // />
           )}
         </div>
       ))}
