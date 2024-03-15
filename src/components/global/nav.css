@@ -71,7 +71,7 @@
 /* logo animation  */
 
 .logo-mask {
-  background: url("../../assets/background/activeBargif.gif");
+  background: url("../../assets/background/video.webp");
   background-size: cover;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -87,3 +87,10 @@
   }
 }
 
+
+
+/* 
+.clipped-video {
+  -webkit-clip-path: url(#text-overlay);
+  clip-path: url(#text-overlay);
+} */

@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div>
       <div className="mainpage">
-        <VideoBG />
+        {/* <VideoBG /> */}
         <Nav btnText={"Select Profile"}/>
         <div className="hero-text-section container relative top-32 flex flex-col gap-10">
           <div className="w-5/6">
