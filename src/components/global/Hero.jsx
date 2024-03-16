@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Nav";
-
+import { NavLink } from "react-router-dom";
 import { MdArrowOutward } from "react-icons/md";
 import VideoBG from "./VideoBG";
 
@@ -20,12 +20,16 @@ function Hero() {
             </h1>
           </div> 
           <div className="buttons flex gap-10 max-sm:flex max-sm:flex-col max-sm:p-2 font-superLagendBoy">
-            <button className="px-10 py-4 border border-white text-[#DBFF00] text-2xl">
-              Borrow
-            </button>
-            <button className="px-10 py-4 border border-[#DBFF00] text-2xl text-white bg-[#536223]">
-              Lend
-            </button>
+            <NavLink to={"/borrow"}>
+              <button className="px-10 py-4 border border-white text-[#DBFF00] text-2xl">
+                Borrow
+              </button>
+            </NavLink>
+            <NavLink to={"/lend"}>
+              <button className="px-10 py-4 border border-[#DBFF00] text-2xl text-white bg-[#536223]">
+                Lend
+              </button>
+            </NavLink>
           </div>
 
           <div className="box-section w-full backdrop-blur-2xl mt-24 max-sm:p-2 p-8 rounded-lg ">

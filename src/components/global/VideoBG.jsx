@@ -22,10 +22,10 @@ function VideoBG() {
           ></video>
           
         </div>
-        <div className='nav-glob  fixed z-10 bottom-10 right-10'>
+        <div className='nav-glob fixed z-10 bottom-10 max-sm:bottom-2 right-10 max-sm:right-2'>
             <NavLink to={"/orderbook"}>
               <a className=''>
-                <img className='' width={100} src={globe} alt="" />
+                <img className='max-sm:w-20' width={100} src={globe} alt="" />
                 </a>
                 {location.pathname === `/orderbook` && (
                   <img src={globBar} className="h-[4px] w-full object-cover"></img>
